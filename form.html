@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/cimer.png">
+    <title>Keszthely</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="#nogo">Információk</a>
+                        <ul>
+                            <li><a href="animation.html">Animáció</a></li>
+                            <li><a href="form.html">Űrlap</a></li>
+                            <li><a href="table.html">Táblázat</a></li>
+                            <li><a href="gallery.html">Képgaléria</a></li>
+                            <li><a href="media.html">Média</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="impresszum.html">Impresszum</a></li>
+                </ul>
+            </div>
+            <div class="slider">
+                <img src="kepek/keszthelyvallslide.jpg" alt="borito1" class="slide slide-1">
+                <img src="kepek/keszthelyfesteticskastelyslide2.jpg" alt="borito2" class="slide slide-2">
+                <img src="kepek/keszthelyhotelslide.jpg" alt="borito3" class="slide slide-3">
+            <div class="slider-label">Keszthely</div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <section style="width: 1200px; height: 1300px;">
+    <h2 style="text-align: center;">Jelentkezés Festetics-kastély tárlatvezetésre</h2>
+    <article style="max-width:1000px; max-height: 1200px; margin:0 auto;">
+        <h2>Jelentkezési űrlap</h2>
+        <form action="">
+            <p><span id="kotelezo">A csillaggal jelölt mezőket kötelező kitölteni!</span></p>
+
+            <!-- Megrendelő adatai -->
+            <fieldset>
+                <legend>Jelentkező adatai</legend>
+
+                <p>
+                    <label for="nev">Név: <span>*</span>
+                        <input type="text" name="nev" id="nev" placeholder="Vezetéknév Keresztnév" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="telefon">Telefonszám: <span>*</span>
+                        <input type="tel" name="telefon" id="telefon" placeholder="Pl.: 06 30 123 4567" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="email">E-mail cím: <span>*</span>
+                        <input type="email" name="email" id="email" placeholder="email@example.com" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="cim">Lakóhely (város): <span>*</span>
+                        <input type="text" name="cim" id="cim" placeholder="Település neve..." required>
+                    </label>
+                </p>
+            </fieldset>
+
+            <!-- Csoport méret -->
+            <fieldset>
+                <legend>Csoport mérete</legend>
+
+                <p><label><input type="radio" name="csoport" value="1-5 fő" required> 1–5 fő</label></p>
+                <p><label><input type="radio" name="csoport" value="6-10 fő"> 6–10 fő</label></p>
+                <p><label><input type="radio" name="csoport" value="11-20 fő"> 11–20 fő</label></p>
+                <p><label><input type="radio" name="csoport" value="20+ fő"> 20+ fő </label></p>
+
+            </fieldset>
+
+            <!-- Választható program -->
+            <fieldset>
+                <legend>Választható tárlatvezetés típusa</legend>
+
+                <p><label><input type="checkbox" name="program" value="kastely"> Kastély főépület tárlatvezetés</label></p>
+                <p><label><input type="checkbox" name="program" value="hintomu"> Hintómúzeum látogatás</label></p>
+                <p><label><input type="checkbox" name="program" value="helikon"> Helikon Könyvtár vezetett túra</label></p>
+                <p><label><input type="checkbox" name="program" value="park"> Kastélypark séta</label></p>
+
+            </fieldset>
+
+            <!-- Dátum és idő -->
+            <fieldset>
+                <legend>Választott időpont</legend>
+
+                <p>
+                    <label for="datum">Kívánt látogatási dátum: <span>*</span>
+                        <input type="date" name="datum" id="datum" required>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="ido">Kívánt kezdési időpont:
+                        <input type="time" name="ido" id="ido">
+                    </label>
+                </p>
+            </fieldset>
+
+            <!-- Egyéb megjegyzés -->
+            <fieldset>
+                <legend>Egyéb megjegyzés</legend>
+                <p>
+                    <textarea name="megjegyzes" id="megjegyzes" rows="4" placeholder="Ide írhatod a különleges kéréseket, megjegyzéseket..."></textarea>
+                </p>
+            </fieldset>
+
+            <button type="reset">Alaphelyzet</button>
+            <button type="submit">Jelentkezés elküldése</button>
+        </form>
+    </article>
+</section>
+
+    </div>
+
+
+    <footer>
+        <h2>Kurmai K. 2025C</h2>
+    </footer>
+
+</body>
+
+</html>
